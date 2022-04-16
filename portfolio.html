@@ -13,6 +13,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
@@ -27,16 +28,16 @@
             </nav>
             <ul class="header-contacts list">
                 <li>
-                    <a class="link header-contacts-tel" href="mailto:info@devstudio.com">
-                        <svg class="emeil-icon" width="16" height="12">
+                    <a class="link header-contact header-contacts-tel" href="mailto:info@devstudio.com">
+                        <svg class="contact-icon" width="16" height="12">
                             <use href="./images/icons.svg#email"></use>
                         </svg>
                         <span>info@devstudio.com</span>
                     </a>
                 </li>
                 <li>
-                    <a class="link header-contacts-mail" href="tel:+380961111111">
-                        <svg class="emeil-icon" width="10" height="16">
+                    <a class="link header-contact" href="tel:+380961111111">
+                        <svg class="contact-icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         <span>+38 096 111 11 11</span>
@@ -49,8 +50,8 @@
     <main>
         <section class="portfolio section">
             <div class="container">
-                <h1 class="hidden">Портфолио</h1>
-                <h2 class="hidden">Портфолио</h2>
+                <h1 class="visually-hidden">Портфолио</h1>
+                <h2 class="visually-hidden">Портфолио</h2>
                 <ul class="portfolio-list-button list">
                     <li class="portfolio-button-item"><button class="portfolio-button" type="button">Все</button></li>
                     <li class="portfolio-button-item"><button class="portfolio-button" type="button">Веб-сайты</button></li>
@@ -204,12 +205,12 @@
                 <a class="link logo" href="./index.html" lang="en"> Web<span class="footer-studio">Studio</span> </a>
                 <address class="footer-address">
                     <ul class="address-list list">
-                        <li class="adress-link"><a class="link footer-link-adr" href="https://goo.gl/maps/uzS9jLpQ6yt513cE9"
+                        <li class="adress-link"><a class="link footer-link-contact footer-link-adr" href="https://goo.gl/maps/uzS9jLpQ6yt513cE9"
                                 target="_blank" rel=" noreferrer noopener">Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="adress-link"><a class="link footer-link-mail"
+                        <li class="adress-link"><a class="link footer-link-contact"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="adress-link"><a class="link footer-link-tel" href="tel:+380961111111">+38 096 111 11
+                        <li class="adress-link"><a class="link footer-link-contact" href="tel:+380961111111">+38 096 111 11
                                 11</a></li>
                     </ul>
                 </address>
@@ -248,6 +249,18 @@
                     </li>
                 </ul>
             </div>
+            <form class="footer-form">
+                <label class="footer-form-label">Подпишитесь на рассылку
+                    <input class="footer-form-input" type="email" name="mail" placeholder="E-mail">
+                </label>
+            
+                <button class="footer-form-button" type="submit">
+                    <span class="footer-form-button-text">Подписаться</span>
+                    <svg class="footer-form-icon" width="24" height="24">
+                        <use href="./images/icons.svg#send-icon"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
 </body>
